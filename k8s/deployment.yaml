@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: war
+  name: har
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: war
+      app: har
   template:
     metadata:
       labels:
-        app: war
+        app: har
     spec:
       containers:
-      - image: okteto.dev/war:latest
-        name: war
+      - image: okteto.dev/har:latest
+        name: har
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "icook.tw"
+          value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "4dc4d0ae-55ee-4039-99ea-1efe73868b06"
+          value: "4c45c9c2-2edd-4161-9db7-a15d6820fda4"
         - name: Vless_Path
-          value: "/lugqwerd43"
+          value: "/dfgbkr2"
         - name: Vmess_UUID
-          value: "4dc4d0ae-55ee-4039-99ea-1efe73868b06"
+          value: "4c45c9c2-2edd-4161-9db7-a15d6820fda4"
         - name: Vmess_Path
-          value: "/fcsdter56"
+          value: "/GBJKOP2r"
         - name: Share_Path
-          value: "/Share602"
+          value: "/Share532"
