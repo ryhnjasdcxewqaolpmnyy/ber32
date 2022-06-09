@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: war
+  name: har
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "war"
+  - name: "har"
     port: 8080
   selector:
-    app: war
+    app: har
