@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: war
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: war
   template:
     metadata:
       labels:
-        app: ray
+        app: war
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/war:latest
+        name: war
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "$ProxySite"
+          value: "icook.tw"
         - name: Vless_UUID
-          value: "$Vless_UUID"
+          value: "4dc4d0ae-55ee-4039-99ea-1efe73868b06"
         - name: Vless_Path
-          value: "$Vless_Path"
+          value: "/lugqwerd43"
         - name: Vmess_UUID
-          value: "$Vmess_UUID"
+          value: "4dc4d0ae-55ee-4039-99ea-1efe73868b06"
         - name: Vmess_Path
-          value: "$Vmess_Path"
+          value: "/fcsdter56"
         - name: Share_Path
-          value: "$Share_Path"
+          value: "/Share602"
