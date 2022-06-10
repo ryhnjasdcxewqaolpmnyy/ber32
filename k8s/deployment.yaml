@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yer
+  name: kec
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yer
+      app: kec
   template:
     metadata:
       labels:
-        app: yer
+        app: kec
     spec:
       containers:
-      - image: okteto.dev/yer:latest
-        name: yer
+      - image: okteto.dev/kec:latest
+        name: kec
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.flexclip.com"
+          value: "clipchamp.com "
         - name: Vless_UUID
-          value: "21d3a188-7c12-456e-9827-d8a0c28494ea"
+          value: "5163328f-5aba-4edb-ab79-cbf28daa6966"
         - name: Vless_Path
-          value: "/YJKPLSA"
+          value: "/pactes32"
         - name: Vmess_UUID
-          value: "21d3a188-7c12-456e-9827-d8a0c28494ea"
+          value: "5163328f-5aba-4edb-ab79-cbf28daa6966"
         - name: Vmess_Path
-          value: "/dcbnmaw"
+          value: "/EGBKL2de"
         - name: Share_Path
-          value: "/Share601"
+          value: "/Share523"
