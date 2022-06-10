@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: har
+  name: yer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: har
+      app: yer
   template:
     metadata:
       labels:
-        app: har
+        app: yer
     spec:
       containers:
-      - image: okteto.dev/har:latest
-        name: har
+      - image: okteto.dev/yer:latest
+        name: yer
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.crazygames.com"
+          value: "www.flexclip.com"
         - name: Vless_UUID
-          value: "4c45c9c2-2edd-4161-9db7-a15d6820fda4"
+          value: "21d3a188-7c12-456e-9827-d8a0c28494ea"
         - name: Vless_Path
-          value: "/dfgbkr2"
+          value: "/YJKPLSA"
         - name: Vmess_UUID
-          value: "4c45c9c2-2edd-4161-9db7-a15d6820fda4"
+          value: "21d3a188-7c12-456e-9827-d8a0c28494ea"
         - name: Vmess_Path
-          value: "/GBJKOP2r"
+          value: "/dcbnmaw"
         - name: Share_Path
-          value: "/Share532"
+          value: "/Share601"
