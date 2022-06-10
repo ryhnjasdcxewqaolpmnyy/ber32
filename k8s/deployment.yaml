@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: poile
+  name: watiy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: poile
+      app: watiy
   template:
     metadata:
       labels:
-        app: poile
+        app: watiy
     spec:
       containers:
-      - image: okteto.dev/poile:latest
-        name: poile
+      - image: okteto.dev/watiy:latest
+        name: watiy
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.moviecrumbs.net "
+          value: "moviemora.com "
         - name: Vless_UUID
-          value: "0288abe9-f391-412c-a6cc-060b58971c0e"
+          value: "d54452df-7d31-448c-a17e-cb3876e84f2f"
         - name: Vless_Path
-          value: "/DANdsv"
+          value: "/FDhbvp"
         - name: Vmess_UUID
-          value: "0288abe9-f391-412c-a6cc-060b58971c0e"
+          value: "d54452df-7d31-448c-a17e-cb3876e84f2f"
         - name: Vmess_Path
-          value: "/argasd"
+          value: "/yhjmkps"
         - name: Share_Path
-          value: "/Share901"
+          value: "/Share560"
