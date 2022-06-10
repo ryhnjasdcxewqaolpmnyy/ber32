@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dcot
+  name: trecd
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "dcot"
+  - name: "trecd"
     port: 8080
   selector:
-    app: dcot
+    app: trecd
