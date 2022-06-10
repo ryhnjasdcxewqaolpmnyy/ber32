@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: trecd
+  name: faret
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: trecd
+      app: faret
   template:
     metadata:
       labels:
-        app: trecd
+        app: faret
     spec:
       containers:
-      - image: okteto.dev/trecd:latest
-        name: trecd
+      - image: okteto.dev/faret:latest
+        name: faret
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "beauty-upgrade.tw "
         - name: Vless_UUID
-          value: "fde9f6de-b995-40bb-acea-6b7294b06b8f"
+          value: "0682bff8-ba4c-4386-a45d-4e858869abf4"
         - name: Vless_Path
-          value: "/stwkmfbDAF"
+          value: "/frbFVFG5"
         - name: Vmess_UUID
-          value: "fde9f6de-b995-40bb-acea-6b7294b06b8f"
+          value: "0682bff8-ba4c-4386-a45d-4e858869abf4"
         - name: Vmess_Path
-          value: "/FAZBOP2"
+          value: "/CVBHNGds"
         - name: Share_Path
-          value: "/Share312"
+          value: "/Share432"
