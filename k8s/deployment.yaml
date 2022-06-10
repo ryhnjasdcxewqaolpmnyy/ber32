@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: swet
+        app: dcot
     spec:
       containers:
       - image: okteto.dev/dcot:latest
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "www.azmovies.net "
         - name: Vless_UUID
-          value: "8b66a22c-356e-43b6-a36d-6a1263505547"
+          value: "e8d0aff9-8e88-453b-84e7-2fdf5f289384"
         - name: Vless_Path
           value: "/JK09sdvf"
         - name: Vmess_UUID
-          value: "8b66a22c-356e-43b6-a36d-6a1263505547"
+          value: "e8d0aff9-8e88-453b-84e7-2fdf5f289384"
         - name: Vmess_Path
           value: "/GBMedf6"
         - name: Share_Path
