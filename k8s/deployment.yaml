@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dcot
+  name: trecd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dcot
+      app: trecd
   template:
     metadata:
       labels:
-        app: dcot
+        app: trecd
     spec:
       containers:
-      - image: okteto.dev/dcot:latest
-        name: dcot
+      - image: okteto.dev/trecd:latest
+        name: trecd
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.azmovies.net "
+          value: "beauty-upgrade.tw "
         - name: Vless_UUID
-          value: "e8d0aff9-8e88-453b-84e7-2fdf5f289384"
+          value: "fde9f6de-b995-40bb-acea-6b7294b06b8f"
         - name: Vless_Path
-          value: "/JK09sdvf"
+          value: "/stwkmfbDAF"
         - name: Vmess_UUID
-          value: "e8d0aff9-8e88-453b-84e7-2fdf5f289384"
+          value: "fde9f6de-b995-40bb-acea-6b7294b06b8f"
         - name: Vmess_Path
-          value: "/GBMedf6"
+          value: "/FAZBOP2"
         - name: Share_Path
-          value: "/Share345"
+          value: "/Share312"
