@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: swet
+  name: dcot
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "swet"
+  - name: "dcot"
     port: 8080
   selector:
-    app: swet
+    app: dcot
