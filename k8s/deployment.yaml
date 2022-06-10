@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kec
+  name: swet
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kec
+      app: swet
   template:
     metadata:
       labels:
-        app: kec
+        app: swet
     spec:
       containers:
-      - image: okteto.dev/kec:latest
-        name: kec
+      - image: okteto.dev/swet:latest
+        name: swet
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "clipchamp.com "
+          value: "www.anime-planet.com "
         - name: Vless_UUID
-          value: "5163328f-5aba-4edb-ab79-cbf28daa6966"
+          value: "90a39920-e84c-457b-bf4d-2fd7adc07fc2"
         - name: Vless_Path
-          value: "/pactes32"
+          value: "/QFBMjok"
         - name: Vmess_UUID
-          value: "5163328f-5aba-4edb-ab79-cbf28daa6966"
+          value: "90a39920-e84c-457b-bf4d-2fd7adc07fc2"
         - name: Vmess_Path
-          value: "/EGBKL2de"
+          value: "/FGBNM"
         - name: Share_Path
-          value: "/Share523"
+          value: "/Share123"
