@@ -27,7 +27,7 @@ fi
 echo ${Vmess_UUID}
 
 if [[ -z "${Share_Path}" ]]; then
-  Share_Path="/Share602"
+  Share_Path="/Share601"
 fi
 echo ${Share_Path}
 
